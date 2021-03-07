@@ -1,5 +1,3 @@
-import '../scss/home.scss'
-import '../scss/index.scss'
 
 const dropdown = document.querySelectorAll('.dropdown');
 

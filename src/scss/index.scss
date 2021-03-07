@@ -1,24 +1,109 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
+$purple: #17023B;
+$blue: #b1bfdd;
+$red: #C71717;
 
 * {
-    box-sizing: border-box;
+    cursor: none;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+body {
+    overflow: hidden;
+    user-select: none;
+
+    img {
+        position: absolute;
+        height: 56vw;
+        top: -2vw;
+        left: -8vw;
+        z-index: 1;
+    }
+
+    .title {
+        position: absolute;
+        bottom: 1.5vw;
+        right: 11vw;
+    }
+
+    h1, h2 {
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: 3vw;
+        color: $red;
+        margin: 0;
+    }
+
+    p {
+        position: absolute;
+        color: $blue;
+        font-weight: 800;
+        font-size: 1vw;
+        bottom: 5vw;
+        left: 9.5vw;
+    }
+
+    #cursor {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue;
+        font-weight: 600;
+        background-color: #05000e;
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: lighten;
+        transition: 0.1s ease-out;
+    }
+    a {
+        display: none;
+    }
 }
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-::-webkit-scrollbar-thumb {
-  background: #C71717;
-}
-::-webkit-scrollbar-track {
-  background: none;
+
+
+#animation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+
+
+    .light, .dark {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+
+        span {
+            border-radius: 100%;
+            transition: 1s;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .light {
+        width: 20vw;
+        span {
+            left: 0;
+            background: $blue;
+            transform: translate(-50%, 50%) scale(5);
+            // 5
+        }
+    }
+
+    .dark {
+        width: 80vw;
+        span {
+            right: 0;
+            background: $purple;
+            transform: translate(50%, 50%) scale(10);
+            // 10
+        }
+    }
 }
