@@ -4,66 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    
     <script src="./js/home.js" defer></script>
+    <link rel="stylesheet" href="./scss/home.scss">
+    <link rel="stylesheet" href="./scss/global.scss">
 </head>
 <body>
     <nav>
-        <ul class="mainlist">
+        <ul class="mainlist" id="mainlist">
+            <li>
+                <a href="">
+                    <img src="./assets/logo.svg" alt="logo">
+                </a>
+            </li>
             <li class="sublist">
-                <a class="dropdown">Noms de domaines</a>
-                <ul class="machin">
+                <a class="dropdown">Données utilisateurs</a>
+                <ul class="hidden">
                     <li>
-                        <a href="">Registrar</a>
+                        <a href="">Géolocalisation</a>
                     </li>
                     <li>
-                        <a href="">Réservations de noms de domaines</a>
+                        <a href="">Cookies</a>
                     </li>
                     <li>
-                        <a href="">Redirection de noms de domaines</a>
-                    </li>
-                    <li>
-                        <a href="">Faire pointer un nom de domaine vers un serveur</a>
+                        <a href="">Flux rss</a>
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="">Hébergement</a>
+            <li class="sublist">
+                <a class="dropdown">Données textuelles et fichiers</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Formats de fichiers et éditeurs</a>
+                    </li>
+                    <li>
+                        <a href="">Manipulation des données</a>
+                    </li>
+                    <li>
+                        <a href="">Nomenclature </a>
+                    </li>
+                    <li>
+                        <a href="">Encodage</a>
+                    </li>
+                    <li>
+                        <a href="">Traitements de masse</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="">Whois</a>
+            <li class="sublist">
+                <a class="dropdown">Médias</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Images</a>
+                    </li>
+                    <li>
+                        <a href="">Vidéos</a>
+                    </li>
+                    <li>
+                        <a href="">Son</a>
+                    </li>
+                    <li>
+                        <a href="">Intégration</a>
+                    </li>
+                    <li>
+                        <a href="">Encapsulation</a>
+                    </li>
+                    <li>
+                        <a href="">Protection</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="">Réseaux sociaux</a>
+            <li class="sublist">
+                <a class="dropdown">Organisation :<br> gestion et protection de données</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Gestion des données</a>
+                    </li>
+                    <li>
+                        <a href="">Migration (htacess)</a>
+                    </li>
+                    <li>
+                        <a href="">Création et injection</a>
+                    </li>
+                    <li>
+                        <a href="">Protection des données (RGPD)</a>
+                    </li>
+                    <li>
+                        <a href="">RFID</a>
+                    </li>
+                    <li>
+                        <a href="">Protection du code (obfuscation)</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="">Données utilisateurs</a>
+            <li class="sublist">
+                <a class="dropdown">Référencement</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Référencement</a>
+                    </li>
+                    <li>
+                        <a href="">CPF / Algorythme Google</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="">Données textuelles et fichiers</a>
+            <li class="sublist">
+                <a class="dropdown">Identité visuelle et ergonomique</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Conception</a>
+                    </li>
+                    <li>
+                        <a href="">Générateurs de faux texte</a>
+                    </li>
+                    <li>
+                        <a href="">Expérience et tests utilisateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Écosystème et Architecture</a>
+                    </li>
+                    <li>
+                        <a href="">Templates</a>
+                    </li>
+                    <li>
+                        <a href="">CMS</a>
+                    </li>
+                    <li>
+                        <a href="">Wysiwyg</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="">Médias</a>
+            <li class="sublist">
+                <a class="dropdown">Compatibilité</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Paramètres de visualisation</a>
+                    </li>
+                    <li>
+                        <a href="">Vues informatiques</a>
+                    </li>
+                    <li>
+                        <a href="">Compatibilités des navigateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Responsivité et adaptabilité</a>
+                    </li>
+                    <li>
+                        <a href="">Versions des langages</a>
+                    </li>
+                    <li>
+                        <a href="">Accessibilité</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="">Organisation :<br> gestion et protection de données</a>
-            </li>
-            <li>
-                <a href="">Référencement</a>
-            </li>
-            <li>
-                <a href="">Identité visuelle et ergonomique</a>
-            </li>
-            <li>
-                <a href="">Compatibilité</a>
-            </li>
-            <li>
-                <a href="">Outils</a>
+            <li class="sublist">
+                <a class="dropdown">Outils</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Visibilité des outils</a>
+                    </li>
+                    <li>
+                        <a href="">gestion / organisation</a>
+                    </li>
+                    <li>
+                        <a href="">Communication</a>
+                    </li>
+                    <li>
+                        <a href="">Développement</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>
 <main>
+    <section>
+        <h1>
+            JYMP
+        </h1>
+        <h2>
+            is the new LAMP
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deserunt, praesentium similique et officiis nulla aliquam voluptas eius error dicta magnam odit necessitatibus accusamus blanditiis fuga dolorum inventore in consectetur!
+            Rerum impedit, aspernatur sit quis exercitationem magnam aut officia quibusdam ex laudantium libero expedita temporibus earum doloremque nostrum minus ipsum illo accusamus perspiciatis voluptate optio! Vel nesciunt dolorum temporibus ipsam!
+            Pariatur assumenda quidem vitae voluptatibus itaque, aperiam esse nulla officiis laboriosam accusamus minima veritatis sed ab repellat deleniti sunt vero, iste doloribus aut delectus ipsam, eos accusantium. Ducimus, soluta odio!
+            Adipisci odio dicta, corporis dolorum, reprehenderit iste ad qui voluptatum ullam dolores sapiente vitae est hic aperiam placeat. Tempore eos cupiditate ratione laudantium error provident illum sit aspernatur nemo rerum.
+            Harum unde blanditiis ea, quam incidunt earum quis excepturi suscipit maiores corrupti saepe cum numquam. Nisi illum, explicabo rerum voluptatum vero exercitationem architecto officiis culpa non cupiditate, praesentium laborum possimus?
+            Iste enim, ut cumque voluptatum nisi inventore voluptate quam voluptates veniam minus blanditiis perferendis ipsam modi est nostrum molestiae. Voluptatum illo necessitatibus quam voluptatibus. Consequatur officiis dicta vel nemo minima?
+            Nulla vitae saepe, esse eum quo expedita. Laborum, culpa quis? Exercitationem libero consectetur at, dolorum consequuntur totam magnam dolor est quasi quaerat ipsum enim. Quod molestias voluptatem voluptas esse fuga!
+            Sint, quam! Dolores vitae consectetur illo ipsa debitis in ab! Consequatur officia porro earum consectetur dignissimos at, suscipit non nulla dolor ad accusantium modi assumenda nam dolorem a aliquid quis.
+            Aliquid enim repellat cum ut necessitatibus maxime optio maiores excepturi architecto quia ipsum consequuntur tempora assumenda molestias provident nemo recusandae quaerat repellendus neque dolores, magnam harum. Possimus magni necessitatibus animi!
+            Dignissimos quae nostrum maiores ipsum eveniet reiciendis non ab, perspiciatis aspernatur voluptate sequi magnam unde iure, ipsam maxime labore, quisquam quis at officia neque repellat aperiam inventore laboriosam molestiae. Dignissimos.
+        </p>
+    </section>
 
-    </main>
+</main>
 </body>
 </html>

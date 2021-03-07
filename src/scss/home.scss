@@ -1,13 +1,20 @@
 $purple: #17023B;
+$blue: #C3D3F4;
+$red: #C71717;
 
 body {
     display: flex;
 }
 
+.fade {
+    opacity: 0;
+}
+
 nav {
+    position: fixed;
     color: $purple;
-    background-color: #C3D3F4;
-    flex: 1;
+    background-color: $blue;
+    width: 20vw;
     height: 100vh;
     overflow-y: auto;
     user-select: none;
@@ -25,32 +32,41 @@ nav {
             &:active {
                 color: $purple;
             }
+            &:hover {
+                transition: 0.1s;
+                color: $red;
+            }
+        }
+
+        img {
+            width: 5vw;
         }
     }
 
     .mainlist {
         margin : 1vh 0 0 2vw;
         width: 80%;
-
         >li {
             font-size: 1.2vw;
             font-weight: bold;
             margin-top: 2vh;
-            transition: 0.3s;
         }
     }
 
+    .dropdown {
+        cursor: pointer;
+    }
+
     .sublist {
+        position: relative;
         ul {
-            margin : 1vh 0 0 1vw;
+            position: relative;
             overflow: hidden;
+            margin : 1vh 0 0 1vw;
             li {
                 font-size: 1vw;
                 font-weight: normal;
                 margin-bottom: 1vh;
-                // display: none;
-                transform: translateY(0);
-                transition: 0.3s;
             }
         }
     }
@@ -62,7 +78,36 @@ nav {
 
 
 main {
-    color: #C3D3F4;
-    background-color: #17023B;
+    margin-left: 20vw;
+    height: 100vh;
+    overflow-y: scroll;
+    color: $blue;
+    background-color: $purple;
     flex: 5;
+    display: flex;
+    justify-content: center;
+    section {
+        margin-top: 10vw;
+        width: 80%;
+        h1, h2 {
+            text-transform: uppercase;
+            position: relative;
+        }
+        h1 {
+            z-index: 2;
+            font-size: 4vw;
+            margin: 0;
+        }
+        h2 {
+            z-index: 1;
+            margin: -2vw 0 2vw 2vw;
+            color: $red;
+            font-size: 3vw;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
 }
