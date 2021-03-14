@@ -2,6 +2,10 @@ $purple: #17023B;
 $blue: #C3D3F4;
 $red: #C71717;
 
+$title: 4vw;
+$text: 1.1vw;
+$legend: 0.9vw;
+
 body {
     background-color: $purple;
 }
@@ -54,10 +58,8 @@ nav {
     }
 
     .sublist {
-        position: relative;
         ul {
             position: relative;
-            overflow: hidden;
             margin : 1vh 0 0 1vw;
             li {
                 font-size: 1vw;
@@ -97,7 +99,7 @@ main {
         }
         h1 {
             z-index: 2;
-            font-size: 4vw;
+            font-size: $title;
             margin: 0;
         }
         h2 {
@@ -108,8 +110,29 @@ main {
         }
 
         p {
-            font-size: 20px;
+            font-size: $text;
             text-align: justify;
         }
+    }
+    button {
+        user-select: none;
+        color: $purple;
+        background: $blue;
+        font-size: $text;
+        border: $blue 2px solid;
+        border-radius: $text/2;
+        padding: $text/2;
+        cursor: pointer;
+        display: none;
+        transition: 0.2s;
+        &:hover, &:focus {
+            outline: $purple;
+            color: $blue;
+            background: none;
+        }
+    }
+    legend {
+        font-size: $legend;
+        margin-top: 10vh;
     }
 }

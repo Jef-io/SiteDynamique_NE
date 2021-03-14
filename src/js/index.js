@@ -11,7 +11,7 @@ document.addEventListener("click", async () => {
     light.style.width = "23vw";
     light.style.height = "23vw";
     await sleep();
-    window.location = './home.html'
+    window.location = './pages/home.html'
 })
 
 
