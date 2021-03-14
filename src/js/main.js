@@ -1,5 +1,6 @@
-import '../scss/home.scss'
-import '../scss/index.scss'
+const sleep = () => {
+    return new Promise(resolve => setTimeout(resolve, 0))
+}
 
 const dropdown = document.querySelectorAll('.dropdown');
 
@@ -19,3 +20,9 @@ const toggleDropdown = (e) => {
         target.nextSibling.classList.add('hidden')
     }
 }
+
+window.addEventListener('DOMContentLoaded', async () => {
+    await sleep();
+    document.getElementById('mainlist').classList.add("visible");
+    document.getElementById('main').classList.add("visible");
+});

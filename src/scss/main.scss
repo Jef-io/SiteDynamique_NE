@@ -1,0 +1,115 @@
+$purple: #17023B;
+$blue: #C3D3F4;
+$red: #C71717;
+
+body {
+    background-color: $purple;
+}
+
+nav {
+    position: fixed;
+    color: $purple;
+    background-color: $blue;
+    width: 20vw;
+    height: 100vh;
+    overflow-y: auto;
+    user-select: none;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        a {
+            text-decoration: none;
+            &:visited {
+                color: $purple;
+            }
+            &:active {
+                color: $purple;
+            }
+            &:hover {
+                transition: 0.1s;
+                color: $red;
+            }
+        }
+
+        img {
+            width: 5vw;
+        }
+    }
+
+    .mainlist {
+        margin : 1vh 0 0 2vw;
+        width: 80%;
+        >li {
+            font-size: 1.2vw;
+            font-weight: bold;
+            margin-top: 2vh;
+        }
+    }
+
+    .dropdown {
+        cursor: pointer;
+    }
+
+    .sublist {
+        position: relative;
+        ul {
+            position: relative;
+            overflow: hidden;
+            margin : 1vh 0 0 1vw;
+            li {
+                font-size: 1vw;
+                font-weight: normal;
+                margin-bottom: 1vh;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+
+main {
+    margin-left: 20vw;
+    overflow-y: scroll;
+    color: $blue;
+    display: flex;
+    justify-content: center;
+    section {
+        margin-top: 10vw;
+        width: 65vw;
+        h1, h2 {
+            text-transform: uppercase;
+            position: relative;
+        }
+        h1 {
+            z-index: 2;
+            font-size: 4vw;
+            margin: 0;
+        }
+        h2 {
+            z-index: 1;
+            margin: -2vw 0 2vw 2vw;
+            color: $red;
+            font-size: 3vw;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
+}
