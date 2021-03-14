@@ -26,3 +26,35 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('mainlist').classList.add("visible");
     document.getElementById('main').classList.add("visible");
 });
+
+const askForCookie = () => {
+
+    const cookieDiv = document.createElement('div');
+    cookieDiv.id = "cookie";
+    cookieDiv.innerHTML = (
+        '<p>Ce site utilise un petit cookie, ce cookie prends en information la dernière page visitée</p>'
+    )
+    const cookieButton = document.createElement('button');
+    cookieButton.innerHTML = "J'en ai pris connaissance";
+    cookieButton.addEventListener('click', () => {
+        acceptCookie();
+    })
+    cookieDiv.append(cookieButton)
+    document.body.appendChild(cookieDiv)
+
+}
+
+const acceptCookie = () => {
+    document.getElementById('cookie').remove();
+    updateCookie()
+}
+
+const updateCookie = () => {
+    document.cookie = "last url = " + document.referrer;
+}
+
+if (!document.cookie) {
+    askForCookie();
+} else {
+    updateCookie()
+}
