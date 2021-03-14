@@ -91,7 +91,8 @@ main {
     display: flex;
     justify-content: center;
     section {
-        margin-top: 10vw;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
         width: 65vw;
         h1, h2 {
             text-transform: uppercase;
@@ -114,25 +115,50 @@ main {
             text-align: justify;
         }
     }
-    button {
-        user-select: none;
-        color: $purple;
-        background: $blue;
-        font-size: $text;
-        border: $blue 2px solid;
-        border-radius: $text/2;
-        padding: $text/2;
-        cursor: pointer;
-        display: none;
-        transition: 0.2s;
-        &:hover, &:focus {
-            outline: $purple;
-            color: $blue;
-            background: none;
-        }
-    }
+
     legend {
         font-size: $legend;
         margin-top: 10vh;
+    }
+}
+
+button {
+    user-select: none;
+    color: $purple;
+    background: $blue;
+    font-size: $text;
+    border: $blue 2px solid;
+    border-radius: $text/2;
+    padding: $text/2;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover, &:focus {
+        outline: $purple;
+        color: $blue;
+        background: none;
+    }
+}
+
+#cookie {
+    position: fixed;
+    top: 2vh;
+    right: 1vw;
+    background: $blue;
+    border-radius: 0.8vw;
+    padding: 2vh 2vw;
+    width: 20vw;
+    color: $purple;
+    font-size: $legend;
+
+    button {
+        font-size: $legend;
+        background: $purple;
+        color: $blue;
+        border-color: $purple;
+        &:hover, &:focus {
+            outline: $purple;
+            color: $purple;
+            background: none;
+        }
     }
 }
