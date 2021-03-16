@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <script src="../js/pages.js" defer></script>
-    <link rel="stylesheet" href="../scss/pages.scss">
-    <link rel="stylesheet" href="../scss/global.scss">
+    <script src="../../js/pages.js" defer></script>
+    <script src="../../js/regex.js" defer></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
+
+    <style>
+        .regex {
+            margin-top: 8vh;
+        }
+    </style>
 </head>
 <body>
     <nav id="menu">
-        <ul class="mainlist invisible" id="mainlist">
+        <ul class="mainlist" id="mainlist">
             <li>
-                <a href="">
-                    <img src="../assets/logo.svg" alt="logo">
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
                 </a>
             </li>
             <li class="sublist">
                 <a class="dropdown">Données utilisateurs</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./userData/geolocalisation.html">Géolocalisation</a>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
                     </li>
                     <li>
-                        <a href="./userData/cookies.html">Cookies</a>
+                        <a href="../userData/cookies.html">Cookies</a>
                     </li>
                 </ul>
             </li>
             <li class="sublist">
                 <a class="dropdown">Données textuelles et fichiers</a>
-                <ul class="hidden">
+                <ul>
                     <li>
                         <a href="">Formats de fichiers et éditeurs</a>
                     </li>
@@ -45,10 +52,10 @@
                         <a href="">Traitements de masse</a>
                     </li>
                     <li>
-                        <a href="./textData/regex.html">Expressions régulières</a>
+                        <a href="">Expressions régulières</a>
                     </li>
                     <li>
-                        <a href="./textData/fluxrss.html">Flux rss</a>
+                        <a href="./fluxrss.html">Flux rss</a>
                     </li>
                 </ul>
             </li>
@@ -182,32 +189,30 @@
         <rect y="30%" width="100" height="20%" fill="#C71717"></rect>
         <rect y="60%" width="100" height="20%" fill="#C71717"></rect>
     </svg>
-    <main>
-        <section class="invisible" id="main">
-            <h1>
-                JYMP
-            </h1>
-            <h2>
-                is the new LAMP
-            </h2>
-            <p>
-                JYMP est un site qui vient illustrer notre dossier mémo que vous pourrez télécharcher ci-dessous. <br>
-                Comme on n'a pas grand chose à raconter, voici un lorem de 300 mots et 2458 caractères : 
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quis atque, culpa porro sequi perspiciatis beatae vel dignissimos temporibus iusto magni obcaecati aut amet ducimus. Eligendi veniam ipsa aspernatur minima?
-                Doloribus, molestiae sit recusandae quidem cupiditate minima velit ullam aperiam, explicabo, repellat magnam nobis provident fugiat error numquam pariatur minus suscipit facere accusantium delectus asperiores optio! Quibusdam quidem magni tempora.
-                Cum dolorum beatae maxime ut dicta exercitationem error perspiciatis alias ducimus, praesentium quae doloribus corrupti aperiam sit voluptate commodi. Nesciunt nihil, modi exercitationem nulla dolorum libero minus? Animi, voluptas quis!
-                Natus magni soluta aliquam deserunt alias quas deleniti sequi dolores minima rem, veniam omnis porro perspiciatis distinctio quae est nam sit rerum atque eius, non iusto molestiae. Consequatur, maxime exercitationem.
-                Blanditiis aut quibusdam, reprehenderit corrupti quos sequi ad magnam ab. Ipsam voluptatem, debitis deleniti rerum rem, possimus, recusandae fugit nobis alias quibusdam sequi neque esse vitae. Delectus ea modi tempore!
-                Ipsam beatae qui cumque enim aliquam consequatur necessitatibus dolorem neque, expedita eaque hic dignissimos. Soluta excepturi, perferendis cupiditate distinctio eveniet provident mollitia, magni nulla pariatur id natus eos dolores alias.
-                Facilis cupiditate beatae nam ipsa repellat totam nihil qui voluptatum, atque nobis doloremque nostrum impedit placeat optio perferendis commodi, ut ipsam nesciunt voluptas non quis inventore, esse voluptates maiores. Necessitatibus!
-                Eos, minima. Ullam veniam non ducimus repudiandae doloribus, magnam molestiae debitis assumenda asperiores excepturi cupiditate ab, itaque eius, tenetur dolorem laboriosam ipsa incidunt rerum mollitia maiores iure praesentium reiciendis esse.
-                Tenetur sed accusamus laboriosam dolorem quae? Non aperiam dolore autem neque facilis quibusdam corrupti ipsum possimus ex, debitis impedit id obcaecati in assumenda dicta voluptatem natus ab. Ad, facilis cupiditate!
-                Enim aspernatur delectus cum dolores cumque! Impedit, consequatur soluta, veritatis tempore, maxime exercitationem adipisci corporis placeat dolorem a atque earum sint ratione reprehenderit! Cumque reiciendis impedit molestias commodi itaque nam.
-            </p>
-        </section>
-
-    </main>
+<main>
+    <section>
+        <h1>Regex</h1>
+        <h2>Regular Expression</h2>
+        <p>
+            Une expression régulière ou regex, permet de vérifier si une chaîne de caractères correspond à un patterne attendu.
+            Les regex sont très utiles pour par exemple, vérifier la validité d'une adresse mail.<br>
+            Voici quelques exemples ci-dessous : 
+        </p>
+        <p class="regex">
+            L'expression régulière  <br>
+            <span style="color: #C71717;">^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$</span> <br>
+            permet de vérifier la validité d'une adresse mail
+        </p>
+        Entrez une adresse mail valide :    <input id="email" type="text">
+        <p id="emailresult">Ecrivez pour voir le résultat</p>
+        <p class="regex">
+            L'expression régulière  <br>
+            <span style="color: #C71717;"> /^((\+|00)33\s?|0)[67](\s?\d{2}){4}$/</span> <br>
+            permet de vérifier la validité d'un numéro de téléphone portable français
+        </p>
+        Entrez un numéro de téléphone portable valide :    <input id="phone" type="text">
+        <p id="phoneresult">Ecrivez pour voir le résultat</p>
+    </section>
+</main>
 </body>
-</html>
+
