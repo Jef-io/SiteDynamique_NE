@@ -2,9 +2,41 @@ $purple: #17023B;
 $blue: #C3D3F4;
 $red: #C71717;
 
-$title: 4vw;
-$text: 1.1vw;
-$legend: 0.9vw;
+$title2xl: 4vw;
+$subtitle2xl: 3vw;
+$text2xl: 1.1vw;
+$legend2xl: 0.9vw;
+$menuItem2xl: 1.2vw;
+
+$titlexl: 4.6vw;
+$subtitlexl: 3.6vw;
+$textxl: 1.4vw;
+$legendxl: 1.1vw;
+$menuItemxl: 1.2vw;
+
+$titlelg: 5.2vw;
+$subtitlelg: 4.2vw;
+$textlg: 1.7vw;
+$legendlg: 1.4vw;
+$menuItemlg: 1.2vw;
+
+$titlemd: 5.8vw;
+$subtitlemd: 4.8vw;
+$textmd: 1.9vw;
+$legendmd: 1.6vw;
+$menuItemmd: 1.2vw;
+
+$titlesm: 7vw;
+$subtitlesm: 6vw;
+$textsm: 2.2vw;
+$legendsm: 1.9vw;
+$menuItemsm: 1.2vw;
+
+$titlexsm: 10vw;
+$subtitlexsm: 9.5vw;
+$textxsm: 16px;
+$legendxsm: 15px;
+$menuItemxsm: 1.2vw;
 
 body {
     background-color: $purple;
@@ -24,48 +56,49 @@ nav {
         flex-direction: column;
         list-style-type: none;
         padding: 0;
-        a {
-            text-decoration: none;
-            &:visited {
-                color: $purple;
-            }
-            &:active {
-                color: $purple;
-            }
-            &:hover {
-                transition: 0.1s;
-                color: $red;
-            }
+    }
+    a {
+        text-decoration: none;
+        &:visited {
+            color: $purple;
         }
-
-        img {
-            width: 5vw;
+        &:active {
+            color: $purple;
+        }
+        &:hover {
+            transition: 0.1s;
+            color: $red;
         }
     }
 
-    .mainlist {
-        margin : 1vh 0 0 2vw;
-        width: 80%;
-        >li {
-            font-size: 1.2vw;
-            font-weight: bold;
-            margin-top: 2vh;
-        }
+    img {
+        width: 5vw;
     }
+}
 
-    .dropdown {
-        cursor: pointer;
+.mainlist {
+
+    margin : 1vh 0 0 2vw;
+    width: 80%;
+    >li {
+        font-size: $menuItem2xl;
+        font-weight: bold;
+        margin-top: 2vh;
     }
+}
 
-    .sublist {
-        ul {
-            position: relative;
-            margin : 1vh 0 0 1vw;
-            li {
-                font-size: 1vw;
-                font-weight: normal;
-                margin-bottom: 1vh;
-            }
+.dropdown {
+    cursor: pointer;
+}
+
+.sublist {
+    ul {
+        position: relative;
+        margin : 1vh 0 0 1vw;
+        li {
+            font-size: $text2xl;
+            font-weight: normal;
+            margin-bottom: 1vh;
         }
     }
 }
@@ -83,6 +116,14 @@ nav {
     transition: opacity 0.5s ease-out;
 }
 
+#menuBurger {
+    position: fixed;
+    left: 1vw;
+    top: 2vh;
+    z-index: 10;
+    display: none;
+}
+
 
 main {
     margin-left: 20vw;
@@ -90,46 +131,48 @@ main {
     color: $blue;
     display: flex;
     justify-content: center;
-    section {
-        margin-top: 20vh;
-        margin-bottom: 5vh;
-        width: 65vw;
-        h1, h2 {
-            text-transform: uppercase;
-            position: relative;
-        }
-        h1 {
-            z-index: 2;
-            font-size: $title;
-            margin: 0;
-        }
-        h2 {
-            z-index: 1;
-            margin: -2vw 0 2vw 2vw;
-            color: $red;
-            font-size: 3vw;
-        }
+}
 
-        p {
-            font-size: $text;
-            text-align: justify;
-        }
-    }
+section {
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    width: 65vw;
+    overflow-wrap: break-word;
+}
 
-    legend {
-        font-size: $legend;
-        margin-top: 10vh;
-    }
+legend {
+    font-size: $legend2xl;
+    margin-top: 10vh;
+}
+h1, h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+h1 {
+    z-index: 2;
+    font-size: $title2xl;
+    margin: 0;
+}
+h2 {
+    z-index: 1;
+    margin: -2vw 0 2vw 2vw;
+    color: $red;
+    font-size: $subtitle2xl;
+}
+
+p {
+    font-size: $text2xl;
+    text-align: justify;
 }
 
 button {
     user-select: none;
     color: $purple;
     background: $blue;
-    font-size: $text;
+    font-size: $text2xl;
     border: $blue 2px solid;
-    border-radius: $text/2;
-    padding: $text/2;
+    border-radius: $text2xl/2;
+    padding: $text2xl/2;
     cursor: pointer;
     transition: 0.2s;
     &:hover, &:focus {
@@ -140,18 +183,20 @@ button {
 }
 
 #cookie {
+    z-index: 5;
     position: fixed;
     top: 2vh;
     right: 1vw;
     background: $blue;
+    border: 1px solid $purple;
     border-radius: 0.8vw;
     padding: 2vh 2vw;
     width: 20vw;
     color: $purple;
-    font-size: $legend;
+    font-size: $legend2xl;
 
     button {
-        font-size: $legend;
+        font-size: $legend2xl;
         background: $purple;
         color: $blue;
         border-color: $purple;
@@ -159,6 +204,164 @@ button {
             outline: $purple;
             color: $purple;
             background: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    h1 {
+        font-size: $titlexl;
+    }
+    h2 {
+        font-size: $subtitlexl;
+    }
+    p {
+        font-size: $textxl;
+    }
+    button {
+        font-size: $textxl;
+    }
+    legend {
+        font-size: $legendxl;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    h1 {
+        font-size: $titlelg;
+    }
+    h2 {
+        font-size: $subtitlelg;
+    }
+    p {
+        font-size: $textlg;
+    }
+    button {
+        font-size: $textlg;
+    }
+    legend {
+        font-size: $legendlg;
+    }
+    #menuBurger {
+        display: block;
+    }
+    nav {
+        z-index: 10;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .mainlist {
+        margin-top: 10vh;
+        overflow-y: scroll;
+        width: auto;
+        >li {
+            font-size: $titlesm;
+            margin-bottom: 5vh;
+        }
+        img {
+            width: $titlexsm;
+        }
+    }
+    .sublist {
+        ul li {
+            font-size: $titlemd;
+            margin-top: 2vh;
+        }
+    }
+    main {
+        margin-left: 0;
+    }
+    section {
+        width: 80vw;
+    }
+    #cookie {
+        width: 40vw;
+        button {
+            font-size: $textlg;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: $titlemd;
+    }
+    h2 {
+        font-size: $subtitlemd;
+    }
+    p {
+        font-size: $textmd;
+    }
+    button {
+        font-size: $textmd;
+    }
+    legend {
+        font-size: $legendmd;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: $titlesm;
+    }
+    h2 {
+        font-size: $subtitlesm;
+    }
+    p {
+        font-size: $textsm;
+    }
+    button {
+        font-size: $textsm;
+    }
+    legend {
+        font-size: $legendsm;
+    }
+    .mainlist {
+        >li {
+            font-size: $titlexsm;
+            margin-bottom: 3vh;
+        }
+        img {
+            width: 70px;
+        }
+    }
+
+    .sublist {
+        ul li  {
+            font-size: $titlesm;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: $titlexsm;
+    }
+    h2 {
+        font-size: $subtitlexsm;
+    }
+    p {
+        font-size: $textxsm;
+    }
+    button {
+        font-size: $textxsm;
+    }
+    legend {
+        font-size: $legendxsm;
+    }
+
+    section {
+        margin-top: 8vh;
+    }
+
+    #cookie {
+        top: 75vh;
+        right: 8vw;
+        width: 84vw;
+        button {
+            font-size: $textxsm;
         }
     }
 }

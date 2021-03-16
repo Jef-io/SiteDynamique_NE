@@ -2,6 +2,7 @@ const sleep = () => {
     return new Promise(resolve => setTimeout(resolve, 0))
 }
 
+//menu
 const dropdown = document.querySelectorAll('.dropdown');
 
 for (let i = 0; i < dropdown.length; i ++) {
@@ -21,12 +22,30 @@ const toggleDropdown = (e) => {
     }
 }
 
+document.getElementById('menuBurger').addEventListener('click', () => {
+    if (document.getElementById('menu').style.display === 'block') {
+        document.getElementById('menu').style.display = 'none'
+    } else {
+        document.getElementById('menu').style.display = 'block'
+    }
+})
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1280 && document.getElementById('menu').style.display === 'none') {
+        document.getElementById('menu').style.display = 'block'
+    } else if (window.innerWidth < 1280 && document.getElementById('menu').style.display === 'block') {
+        document.getElementById('menu').style.display = 'none'
+    }
+})
+
+//fade in
 window.addEventListener('DOMContentLoaded', async () => {
     await sleep();
     document.getElementById('mainlist').classList.add("visible");
     document.getElementById('main').classList.add("visible");
 });
 
+//Cookie
 const askForCookie = () => {
 
     const cookieDiv = document.createElement('div');
