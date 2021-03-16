@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../scss/global.scss">
 </head>
 <body>
-    <nav>
+    <nav id="menu">
         <ul class="mainlist" id="mainlist">
             <li>
                 <a href="../home.html">
@@ -24,6 +24,9 @@
                 <ul>
                     <li>
                         <a href="">Géolocalisation</a>
+                    </li>
+                    <li>
+                        <a href="./cookies.html">Cookies</a>
                     </li>
                 </ul>
             </li>
@@ -172,9 +175,14 @@
             </li>
         </ul>
     </nav>
+    <svg viewBox="0 0 100 80" width="40" height="40" id="menuBurger">
+        <rect width="100" height="20%" fill="white"></rect>
+        <rect y="30%" width="100" height="20%" fill="white"></rect>
+        <rect y="60%" width="100" height="20%" fill="white"></rect>
+    </svg>
 <main>
     <section>
-        <h1>Géolocalisation</h1>
+        <h1>Géo<br>localisation</h1>
         <p>Acceptez de partager votre position pour que les informations s'affichent*</p>
         <p id="location"></p>
         <button id="mapsButton" style="display: none;">
