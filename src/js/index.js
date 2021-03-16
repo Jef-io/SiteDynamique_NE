@@ -6,10 +6,15 @@ const sleep = () => {
 document.addEventListener("click", async () => {
     const dark = document.getElementById('dark');
     const light = document.getElementById('light');
-    dark.style.width = "23vw";
-    dark.style.height = "23vw";
-    light.style.width = "23vw";
-    light.style.height = "23vw";
+    if (window.innerWidth < 1280) {
+        dark.style.width = "40vh";
+        dark.style.height = "40vh";
+    } else {
+        dark.style.width = "23vw";
+        dark.style.height = "23vw";
+        light.style.width = "23vw";
+        light.style.height = "23vw";
+    }
     await sleep();
     window.location = './pages/home.html'
 })
