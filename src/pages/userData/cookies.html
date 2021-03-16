@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <script src="../../js/pages.js" defer></script>
+    <script src="../../js/cookies.js"></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
+</head>
+<body>
+    <nav id="menu">
+        <ul class="mainlist" id="mainlist">
+            <li>
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
+                </a>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Données utilisateurs</a>
+                <ul>
+                    <li>
+                        <a href="./geolocalisation.html">Géolocalisation</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Données textuelles et fichiers</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Formats de fichiers et éditeurs</a>
+                    </li>
+                    <li>
+                        <a href="">Manipulation des données</a>
+                    </li>
+                    <li>
+                        <a href="">Encodage</a>
+                    </li>
+                    <li>
+                        <a href="">Traitements de masse</a>
+                    </li>
+                    <li>
+                        <a href="../textData/fluxrss.html">Flux rss</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Médias</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Images</a>
+                    </li>
+                    <li>
+                        <a href="">Vidéos</a>
+                    </li>
+                    <li>
+                        <a href="">Son</a>
+                    </li>
+                    <li>
+                        <a href="">Intégration</a>
+                    </li>
+                    <li>
+                        <a href="">Encapsulation</a>
+                    </li>
+                    <li>
+                        <a href="">Protection</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Organisation :<br> gestion et protection de données</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Gestion des données</a>
+                    </li>
+                    <li>
+                        <a href="">Migration (htacess)</a>
+                    </li>
+                    <li>
+                        <a href="">Création et injection</a>
+                    </li>
+                    <li>
+                        <a href="">Protection des données (RGPD)</a>
+                    </li>
+                    <li>
+                        <a href="">RFID</a>
+                    </li>
+                    <li>
+                        <a href="">Protection du code (obfuscation)</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Référencement</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Référencement</a>
+                    </li>
+                    <li>
+                        <a href="">CPF / Algorythme Google</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Identité visuelle et ergonomique</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Conception</a>
+                    </li>
+                    <li>
+                        <a href="">Générateurs de faux texte</a>
+                    </li>
+                    <li>
+                        <a href="">Expérience et tests utilisateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Écosystème et Architecture</a>
+                    </li>
+                    <li>
+                        <a href="">Templates</a>
+                    </li>
+                    <li>
+                        <a href="">CMS</a>
+                    </li>
+                    <li>
+                        <a href="">Wysiwyg</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Compatibilité</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Paramètres de visualisation</a>
+                    </li>
+                    <li>
+                        <a href="">Vues informatiques</a>
+                    </li>
+                    <li>
+                        <a href="">Compatibilités des navigateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Responsivité et adaptabilité</a>
+                    </li>
+                    <li>
+                        <a href="">Versions des langages</a>
+                    </li>
+                    <li>
+                        <a href="">Accessibilité</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Outils</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Visibilité des outils</a>
+                    </li>
+                    <li>
+                        <a href="">gestion / organisation</a>
+                    </li>
+                    <li>
+                        <a href="">Communication</a>
+                    </li>
+                    <li>
+                        <a href="">Développement</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <svg viewBox="0 0 100 80" width="40" height="40" id="menuBurger">
+        <rect width="100" height="20%" fill="white"></rect>
+        <rect y="30%" width="100" height="20%" fill="white"></rect>
+        <rect y="60%" width="100" height="20%" fill="white"></rect>
+    </svg>
+<main>
+    <section>
+        <h1>Cookies</h1>
+        <p>Comme vous l'avez vu, ce site utilise un cookie</p>
+        <p>A chaque changement de page, le cookie enregistre la dernière page visitée</p>
+        <p>Dernière url visitée (si vous avez bien entendu accepté le cookie) : </p>
+        <p id="lasturl"></p>
+    </section>
+</main>
+</body>
