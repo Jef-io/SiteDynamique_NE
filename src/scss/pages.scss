@@ -191,6 +191,17 @@ input {
     margin-left: 0.8vw;
 }
 
+table {
+    margin-top: 5vh;
+    border: solid 2px $blue;
+    border-spacing: 1vw 2vh;
+    border-collapse: collapse;
+    td {
+        padding: 2vh 2vw;
+        border: solid 2px $blue;
+    }
+}
+
 #cookie {
     z-index: 5;
     position: fixed;

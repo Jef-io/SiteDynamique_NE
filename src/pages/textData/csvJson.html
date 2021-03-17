@@ -7,7 +7,7 @@
     <title>Home</title>
     
     <script src="../../js/pages.js" defer></script>
-    <script src="../../js/cookies.js"></script>
+    <script src="../../js/csvjson.js" defer></script>
     <link rel="stylesheet" href="../../scss/pages.scss">
     <link rel="stylesheet" href="../../scss/global.scss">
 </head>
@@ -15,18 +15,18 @@
     <nav id="menu">
         <ul class="mainlist" id="mainlist">
             <li>
-                <a href="../home.html">
+                <a href="">
                     <img src="../../assets/logo.svg" alt="logo">
                 </a>
             </li>
             <li class="sublist">
                 <a class="dropdown">Données utilisateurs</a>
-                <ul>
+                <ul class="hidden">
                     <li>
-                        <a href="./geolocalisation.html">Géolocalisation</a>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
                     </li>
                     <li>
-                        <a href="">Cookies</a>
+                        <a href="../userData/cookies.html">Cookies</a>
                     </li>
                 </ul>
             </li>
@@ -34,7 +34,7 @@
                 <a class="dropdown">Données textuelles et fichiers</a>
                 <ul class="hidden">
                     <li>
-                        <a href="../textData/csvJson.html">CSV et JSON</a>
+                        <a href="">CSV et JSON</a>
                     </li>
                     <li>
                         <a href="">Manipulation des données</a>
@@ -183,13 +183,21 @@
         <rect y="30%" width="100" height="20%" fill="#C71717"></rect>
         <rect y="60%" width="100" height="20%" fill="#C71717"></rect>
     </svg>
-<main>
-    <section>
-        <h1>Cookies</h1>
-        <p>Comme vous l'avez sûrement remarqué en entrant sur le site, ce site utilise un cookie que l'on vous demande d'accepter.</p>
-        <p>A chaque changement de page, le cookie enregistre la dernière page visitée</p>
-        <p>Dernière url visitée (si vous avez bien entendu accepté le cookie) : </p>
-        <p id="lasturl"></p>
-    </section>
-</main>
+    <main>
+        <section id="main">
+            <h1>
+                CSV & JSON
+            </h1>
+            <p>
+                Descritpion du csv
+            </p>
+            <p>
+                Descritpion du json
+            </p>
+            Importez un fichier .CSV ou .JSON et regardez la magie s'opérer<input type="file" id="fileupload">
+            <div id="result">
+            </div>
+        </section>
+    </main>
 </body>
+</html>
