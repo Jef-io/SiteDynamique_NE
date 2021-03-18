@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
+    "@parcel/transformer-sass": "^2.0.0-nightly.630",
+    "parcel": "^2.0.0-nightly.628",
     "sass": "^1.32.8"
   },
   "scripts": {
