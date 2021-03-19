@@ -127,16 +127,13 @@ nav {
 
 main {
     margin-left: 20vw;
-    overflow-y: scroll;
+    min-height: 100vh;
+    padding: 5vh 5vw 5vh 5vw;
     color: $blue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-section {
-    margin-top: 20vh;
-    margin-bottom: 5vh;
-    width: 65vw;
+    align-items: flex-start;
     overflow-wrap: break-word;
 }
 
