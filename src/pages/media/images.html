@@ -9,6 +9,7 @@
     <script src="../../js/pages.js" defer></script>
     <link rel="stylesheet" href="../../scss/pages.scss">
     <link rel="stylesheet" href="../../scss/global.scss">
+    <link rel="stylesheet" href="../../scss/media.scss">
 </head>
 <body>
     <nav id="menu">
@@ -59,7 +60,7 @@
                         <a href="">Images</a>
                     </li>
                     <li>
-                        <a href="./integration.html">Intégration médias</a>
+                        <a href="./audioVideo.html">Audio et vidéo</a>
                     </li>
                     <li>
                         <a href="./protection.html">Protection</a>
@@ -179,20 +180,46 @@
                 Images
             </h1>
             <p>
-                Description images
+                Voici un comparatif d'une image déclinée sous plusieurs formats.
+                Pour en savoir plus, allez à la page machin du dossier pdf.
             </p>
-            <!-- <img src="" alt=""> -->
+            <div class="sizesGallery">
+                <figure>
+                    <figcaption>
+                        Image jpg ou jpeg - 2 138 ko : 
+                    </figcaption>
+                    <img src="../../assets/media/JPG.jpg" alt="Photo de violettes">
+                </figure>
+                <figure>
+                    <figcaption>
+                        Image png 8 bits - 1621 ko : 
+                    </figcaption>
+                    <img srcset="../../assets/media/PNG8.png" src="../../assets/media/JPG.jpg" alt="Photo de violettes">
+                </figure>
+                <figure>
+                    <figcaption>
+                        Image png 24 bits - 6072 ko : 
+                    </figcaption>
+                    <img srcset="../../assets/media/PNG24.png" src="../../assets/media/JPG.jpg" alt="Photo de violettes">
+                </figure>
+                <figure>
+                    <figcaption>
+                        Image gif - 904 ko : 
+                    </figcaption>
+                    <img src="../../assets/media/GIF.gif" alt="Photo de violettes">
+                </figure>
+            </div>
             <p>
-                Image jpg ou jpeg (si vous avez lu le dossier vous saurez que c'est la même chose) : 
+                Voici un exemple de svg
             </p>
+            <figure>
+                <figcaption>
+                    Logo svg - 2ko :<br>Graphisme appartenant à Monsieur Jonathan McIntosh
+                </figcaption>
+                <img src="../../assets/media/JPG.jpg" srcset="../../assets/media/planete.svg" alt="Planete du logo d'Ateliers Insolites">
+            </figure>
             <p>
-                Image png : 
-            </p>
-            <p>
-                Gif : 
-            </p>
-            <p>
-                Image svg : 
+                Animation Gif : 
             </p>
             <p>
                 Animation svg : 

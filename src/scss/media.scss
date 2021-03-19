@@ -1,0 +1,7 @@
+.sizesGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    figure, img {
+        width: 25vw;
+    }
+}
