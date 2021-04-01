@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../../js/pages.js" defer></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
+    <link rel="stylesheet" href="../../scss/media.scss">
+</head>
+<body>
+    <nav id="menu">
+        <ul class="mainlist" id="mainlist">
+            <li>
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
+                </a>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Données utilisateurs</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
+                    </li>
+                    <li>
+                        <a href="../userData/cookies.html">Cookies</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Données textuelles et fichiers</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="../textData/csvJson.html">CSV et JSON</a>
+                    </li>
+                    <!-- <li>
+                        <a href="">Manipulation des données</a>
+                    </li>
+                    <li>
+                        <a href="">Encodage</a>
+                    </li>
+                    <li>
+                        <a href="">Traitements de masse</a>
+                    </li> -->
+                    <li>
+                        <a href="../textData/regex.html">Expressions régulières</a>
+                    </li>
+                    <li>
+                        <a href="../textData/fluxrss.html">Flux rss</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Médias</a>
+                <ul class="">
+                    <li>
+                        <a href="./images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="">Stéganographie</a>
+                    </li>
+                    <li>
+                        <a href="./audioVideo.html">Audio et vidéo</a>
+                    </li>
+                    <li>
+                        <a href="./protection.html">Protection</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Organisation :<br> gestion et protection de données</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Gestion des données</a>
+                    </li>
+                    <li>
+                        <a href="">Migration (htacess)</a>
+                    </li>
+                    <li>
+                        <a href="">Création et injection</a>
+                    </li>
+                    <li>
+                        <a href="">Protection des données (RGPD)</a>
+                    </li>
+                    <li>
+                        <a href="">RFID</a>
+                    </li>
+                    <li>
+                        <a href="">Protection du code (obfuscation)</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Référencement</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Référencement</a>
+                    </li>
+                    <li>
+                        <a href="">CPF / Algorythme Google</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Identité visuelle et ergonomique</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Conception</a>
+                    </li>
+                    <li>
+                        <a href="">Générateurs de faux texte</a>
+                    </li>
+                    <li>
+                        <a href="">Expérience et tests utilisateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Écosystème et Architecture</a>
+                    </li>
+                    <li>
+                        <a href="">Templates</a>
+                    </li>
+                    <li>
+                        <a href="">CMS</a>
+                    </li>
+                    <li>
+                        <a href="">Wysiwyg</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Compatibilité</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Paramètres de visualisation</a>
+                    </li>
+                    <li>
+                        <a href="">Vues informatiques</a>
+                    </li>
+                    <li>
+                        <a href="">Compatibilités des navigateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Responsivité et adaptabilité</a>
+                    </li>
+                    <li>
+                        <a href="">Versions des langages</a>
+                    </li>
+                    <li>
+                        <a href="">Accessibilité</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Outils</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Visibilité des outils</a>
+                    </li>
+                    <li>
+                        <a href="">gestion / organisation</a>
+                    </li>
+                    <li>
+                        <a href="">Communication</a>
+                    </li>
+                    <li>
+                        <a href="">Développement</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <svg viewBox="0 0 100 80" width="40" height="40" id="menuBurger">
+        <rect width="100" height="20%" fill="#C71717"></rect>
+        <rect y="30%" width="100" height="20%" fill="#C71717"></rect>
+        <rect y="60%" width="100" height="20%" fill="#C71717"></rect>
+    </svg>
+    <main>
+        <h1>
+            Stéganographie
+        </h1>
+        <p>Texte explicatif</p>
+        <p>Images d'origine : </p>
+        <div class="gallery">
+            <figure>
+                <figcaption>
+                    Image conteneur
+                </figcaption>
+                <img src="../../assets/media/stegano/originale2.jpg" alt="Photo de fleurs bleues">
+            </figure>
+            <figure>
+                <figcaption>
+                    Image contenue
+                </figcaption>
+                <img src="../../assets/media/stegano/originale.jpg" alt="Photo de fleurs bleues">
+            </figure>
+        </div>
+        <p>Résultat</p>
+        <div class="gallery">
+            <figure>
+                <figcaption>
+                    Stéganographie invisible
+                </figcaption>
+                <img src="../../assets/media/stegano/steg1.png" alt="Photo de fleurs bleues">
+            </figure>
+            <figure>
+                <figcaption>
+                    Stéganographie visible
+                </figcaption>
+                <img src="../../assets/media/stegano/steg2.png" alt="Photo de fleurs bleues">
+            </figure>
+        </div>
+        <p>Quand on essaie de décrypter l'image contenue</p>
+        <div class="gallery">
+            <figure>
+                <figcaption>
+                    Stéganographie invisible
+                </figcaption>
+                <img src="../../assets/media/stegano/decrypt1.png" alt="Photo de fleurs bleues">
+            </figure>
+            <figure>
+                <figcaption>
+                    Stéganographie visible
+                </figcaption>
+                <img src="../../assets/media/stegano/decrypt2.png" alt="Photo de fleurs bleues">
+            </figure>
+        </div>
+    </main>
+</body>
+</html>
