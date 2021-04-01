@@ -7,6 +7,8 @@
     <title>Home</title>
     
     <script src="../../js/pages.js" defer></script>
+    <script src="../../js/media.js" defer></script>
+    <link rel="stylesheet" href="../../scss/media.scss">
     <link rel="stylesheet" href="../../scss/pages.scss">
     <link rel="stylesheet" href="../../scss/global.scss">
 </head>
@@ -14,7 +16,7 @@
     <nav id="menu">
         <ul class="mainlist" id="mainlist">
             <li>
-                <a href="">
+                <a href="../home.html">
                     <img src="../../assets/logo.svg" alt="logo">
                 </a>
             </li>
@@ -187,20 +189,28 @@
             <source src="../../assets/media/YOW.wav" type="audio/wav">
             <source src="../../assets/media/YOW.mp3" type="audio/mp3">
         </audio>
-        <p>
-            Balise vidéo machin machin
-        </p>
-        <video controls>
-            <source src="../../assets/media/WhatsApp_Video_2021-03-20_at_11.34.54.mp4" type="video/mp4">
-        </video>
-        <p>
-            Palise embed machin machin
-        </p>
-        <embed src="../../assets/media/WhatsApp_Video_2021-03-20_at_11.34.54.mp4">
+        <div class="gallery">
+            <figure>
+                <figcaption>Balise vidéo machin machin</figcaption>
+                <video controls>
+                    <source src="../../assets/media/WhatsApp_Video_2021-03-20_at_11.34.54.mp4" type="video/mp4">
+                </video>
+            </figure>
+            <figure>
+                <figcaption>Balise embed machin machin</figcaption>
+                <embed src="../../assets/media/WhatsApp_Video_2021-03-20_at_11.34.54.mp4">
+            </figure>
+        </div>
         <p>
             Balise i frame youtube machin machin
         </p>
         <iframe width="100%" height="300" src="https://www.youtube.com/embed/Ua7Qfc1xu90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+            Canvas
+        </p>
+        <canvas id="canvas">
+
+        </canvas>
     </main>
 </body>
 </html>
