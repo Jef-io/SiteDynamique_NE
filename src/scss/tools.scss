@@ -1,0 +1,69 @@
+$blue: #C3D3F4;
+$red: #C71717;
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.smallToolsList {
+    width: 60%;
+    grid-template-columns: repeat(3,25%);
+}
+
+.toolsList {
+    width: 100%;
+    grid-template-columns: repeat(4,15%);
+}
+
+.toolsList, .smallToolsList {
+    list-style-type: none;
+    font-size: 22px;
+    color: $red;
+    display: grid;
+    gap: 10%;
+    padding: 0;
+    text-transform: uppercase;
+    a {
+        display: block;
+        text-transform: lowercase;
+        text-decoration: none;
+        color: $blue;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    ul {
+        margin-top: 10px;
+        padding-left: 22px;
+    }
+}
+
+.inline {
+    display: inline;
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+@media screen and (max-width: 1536px) {
+    .toolsList {
+        grid-template-columns: repeat(4,17%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .toolsList {
+        grid-template-columns: repeat(3,25%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toolsList, .smallToolsList {
+        grid-template-columns: repeat(2,40%);
+        font-size: 18px;
+    }
+}

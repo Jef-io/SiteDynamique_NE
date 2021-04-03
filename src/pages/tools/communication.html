@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <script src="../js/pages.js" defer></script>
-    <link rel="stylesheet" href="../scss/pages.scss">
-    <link rel="stylesheet" href="../scss/global.scss">
+    <script src="../../js/pages.js" defer></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
+    <link rel="stylesheet" href="../../scss/tools.scss">
 </head>
 <body>
     <nav id="menu">
-        <ul class="mainlist invisible" id="mainlist">
+        <ul class="mainlist" id="mainlist">
             <li>
-                <a href="">
-                    <img src="../assets/logo.svg" alt="logo">
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
                 </a>
             </li>
             <li class="sublist">
                 <a class="dropdown">Données utilisateurs</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./userData/geolocalisation.html">Géolocalisation</a>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
                     </li>
                     <li>
-                        <a href="./userData/cookies.html">Cookies</a>
+                        <a href="../userData/cookies.html">Cookies</a>
                     </li>
                 </ul>
             </li>
@@ -33,7 +34,7 @@
                 <a class="dropdown">Données textuelles et fichiers</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./textData/csvJson.html">CSV et JSON</a>
+                        <a href="../textData/csvJson.html">CSV et JSON</a>
                     </li>
                     <!-- <li>
                         <a href="">Manipulation des données</a>
@@ -45,10 +46,10 @@
                         <a href="">Traitements de masse</a>
                     </li> -->
                     <li>
-                        <a href="./textData/regex.html">Expressions régulières</a>
+                        <a href="../textData/regex.html">Expressions régulières</a>
                     </li>
                     <li>
-                        <a href="./textData/fluxrss.html">Flux rss</a>
+                        <a href="../textData/fluxrss.html">Flux rss</a>
                     </li>
                 </ul>
             </li>
@@ -56,16 +57,16 @@
                 <a class="dropdown">Médias</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./media/images.html">Images</a>
+                        <a href="../media/images.html">Images</a>
                     </li>
                     <li>
-                        <a href="./media/steganography.html">Stéganographie</a>
+                        <a href="../media/steganography.html">Stéganographie</a>
                     </li>
                     <li>
-                        <a href="./media/audioVideo.html">Audio et vidéo</a>
+                        <a href="../media/audioVideo.html">Audio et vidéo</a>
                     </li>
                     <li>
-                        <a href="">Protection</a>
+                        <a href="../media/protection.html">Protection</a>
                     </li>
                 </ul>
             </li>
@@ -151,7 +152,7 @@
             </li>
             <li class="sublist">
                 <a class="dropdown">Outils</a>
-                <ul class="hidden">
+                <ul>
                     <!-- <li>
                         <a href="">Visibilité des outils</a>
                     </li>
@@ -159,16 +160,16 @@
                         <a href="">gestion / organisation</a>
                     </li> -->
                     <li>
-                        <a href="./tools/communication.html">Communication</a>
+                        <a href="">Communication</a>
                     </li>
                     <li>
-                        <a href="./tools/conception.html">Conception</a>
+                        <a href="./conception.html">Conception</a>
                     </li>
                     <li>
-                        <a href="./tools/management.html">Gestion</a>
+                        <a href="../tools/management.html">Gestion</a>
                     </li>
                     <li>
-                        <a href="./tools/development.html">Développement</a>
+                        <a href="../tools/development.html">Développement</a>
                     </li>
                 </ul>
             </li>
@@ -179,26 +180,75 @@
         <rect y="30%" width="100" height="20%" fill="#C71717"></rect>
         <rect y="60%" width="100" height="20%" fill="#C71717"></rect>
     </svg>
-    <main class="invisible" id="main">
+    <main id="main">
         <h1>
-            JYMP
+            Outils
         </h1>
         <h2>
-            is the new LAMP
+            Communication
         </h2>
+        <h3>
+            Mass mailing
+        </h3>
         <p>
-            JYMP est un site qui nous permet d'illustrer notre super dossier qui constitue un super mémo autour de la construction de sites web. <br>
-            Comme on est super gentils, on vous le met à disposition, c'est pour nous, c'est cadeau : <span style="color: #C71717; cursor: pointer;">lien téléchargement</span><br>
-            Ensuite, comme on a rien d'autre à dire, voici un lorem de 716 caractères pour qu'on ait l'air intelligent :
+            Un outil de massmailing permet d'envoyer un nombre très important de mails à 
+            des adresses qui l'ont accepté dans un but de prospection.<br>
+            Voici une liste d'outils de mass mailing populaires :
         </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam quibusdam, deserunt temporibus debitis nihil ipsum praesentium id, tempora eius voluptas impedit maiores tempore recusandae minus perferendis reprehenderit explicabo adipisci.
-            Eius incidunt illo totam adipisci itaque perspiciatis laudantium cum ullam, doloremque, accusantium inventore eligendi esse exercitationem nisi repudiandae sed culpa id placeat, autem deleniti corrupti illum enim iure. Quo, eum.
-            Fuga dolores numquam cupiditate qui, accusamus deleniti vel? Iste maiores incidunt ullam harum. Deleniti iusto exercitationem voluptas laudantium culpa quibusdam iste dolore velit ducimus veniam. Dolore delectus voluptates illum repellat?
-        </p>
-        <p>
-            En latin, "cum" signifie "comme, étant donné que", nous ne sommes pas des perverts.
-        </p>
+        <ul class="toolsList">
+            <li><a href="https://www.sarbacane.com/" target="_blank" rel="noopener noreferrer">Sarbacane</a></li>
+            <li><a href="https://fr.sendinblue.com/" target="_blank" rel="noopener noreferrer">Sendinblue</a></li>
+            <li><a href="https://www.mdirector.com/fr/" target="_blank" rel="noopener noreferrer">MDirector</a></li>
+            <li><a href="https://www.digitaleo.fr/" target="_blank" rel="noopener noreferrer">Digitaleo</a></li>
+        </ul>
+        <h3>
+            Outils de communication classiques
+        </h3>
+        <!-- <p>On explique ahahahahah</p> -->
+        <ul class="toolsList">
+            <li>Chat
+                <ul>
+                    <li><a href="https://slack.com/intl/fr-fr/" target="_blank" rel="noopener noreferrer">Slack</a></li>
+                    <li><a href="https://boutique.orange.fr/mobile" target="_blank" rel="noopener noreferrer">Messages</a></li>
+                    <li><a href="https://www.messenger.com/" target="_blank" rel="noopener noreferrer">Messenger</a></li>
+                    <li><a href="https://signal.org/fr/" target="_blank" rel="noopener noreferrer">Signal</a></li>
+                </ul>
+            </li>
+            <li>Appel
+                <ul>
+                    <li><a href="https://boutique.orange.fr/mobile" target="_blank" rel="noopener noreferrer">Téléphone</a></li>
+                    <li><a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a href="https://www.microsoft.com/fr-fr/microsoft-teams/group-chat-software" target="_blank" rel="noopener noreferrer">Teams</a></li>
+                    <li><a href="https://zoom.us/fr-fr/meetings.html" target="_blank" rel="noopener noreferrer">Zoom</a></li>
+                </ul>
+            </li>
+            <li>Forum
+                <ul>
+                    <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">Stack overflow</a></li>
+                    <li><a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a></li>
+                    <li><a href="https://intellij-support.jetbrains.com/hc/en-us/community/topics" target="_blank" rel="noopener noreferrer">Jetbrains community</a></li>
+                    <li><a href="https://devrant.com/" target="_blank" rel="noopener noreferrer">DevRant</a></li>
+                </ul>
+            </li>
+            <li>Mail
+                <ul>
+                    <li><a href="https://www.google.com/intl/fr/gmail/about/" target="_blank" rel="noopener noreferrer">Gmail</a></li>
+                    <li><a href="https://outlook.live.com/owa/" target="_blank" rel="noopener noreferrer">Outlook</a></li>
+                    <li><a href="https://protonmail.com/fr/" target="_blank" rel="noopener noreferrer">ProtonMail</a></li>
+                    <li><a href="https://www.zoho.com/fr/mail/" target="_blank" rel="noopener noreferrer">Zoho Mail</a></li>
+                </ul>
+            </li>
+            <li>Calendriers
+                <ul>
+                    <li><a href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer">Google calendar</a></li>
+                    <li><a href="https://outlook.live.com/owa/" target="_blank" rel="noopener noreferrer">Outlook</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- <p>
+            Sinon vous pouvez aussi envoyer des
+            <a href="https://www.laposte.fr/" target="_blank" rel="noopener noreferrer">lettres</a>
+        </p> -->
     </main>
 </body>
 </html>

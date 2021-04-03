@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <script src="../js/pages.js" defer></script>
-    <link rel="stylesheet" href="../scss/pages.scss">
-    <link rel="stylesheet" href="../scss/global.scss">
+    <script src="../../js/pages.js" defer></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
+    <link rel="stylesheet" href="../../scss/tools.scss">
 </head>
 <body>
     <nav id="menu">
         <ul class="mainlist invisible" id="mainlist">
             <li>
-                <a href="">
-                    <img src="../assets/logo.svg" alt="logo">
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
                 </a>
             </li>
             <li class="sublist">
                 <a class="dropdown">Données utilisateurs</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./userData/geolocalisation.html">Géolocalisation</a>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
                     </li>
                     <li>
-                        <a href="./userData/cookies.html">Cookies</a>
+                        <a href="../userData/cookies.html">Cookies</a>
                     </li>
                 </ul>
             </li>
@@ -33,7 +34,7 @@
                 <a class="dropdown">Données textuelles et fichiers</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./textData/csvJson.html">CSV et JSON</a>
+                        <a href="../textData/csvJson.html">CSV et JSON</a>
                     </li>
                     <!-- <li>
                         <a href="">Manipulation des données</a>
@@ -45,10 +46,10 @@
                         <a href="">Traitements de masse</a>
                     </li> -->
                     <li>
-                        <a href="./textData/regex.html">Expressions régulières</a>
+                        <a href="../textData/regex.html">Expressions régulières</a>
                     </li>
                     <li>
-                        <a href="./textData/fluxrss.html">Flux rss</a>
+                        <a href="../textData/fluxrss.html">Flux rss</a>
                     </li>
                 </ul>
             </li>
@@ -56,16 +57,16 @@
                 <a class="dropdown">Médias</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./media/images.html">Images</a>
+                        <a href="../media/images.html">Images</a>
                     </li>
                     <li>
-                        <a href="./media/steganography.html">Stéganographie</a>
+                        <a href="../media/steganography.html">Stéganographie</a>
                     </li>
                     <li>
-                        <a href="./media/audioVideo.html">Audio et vidéo</a>
+                        <a href="../media/audioVideo.html">Audio et vidéo</a>
                     </li>
                     <li>
-                        <a href="">Protection</a>
+                        <a href="../media/protection.html">Protection</a>
                     </li>
                 </ul>
             </li>
@@ -151,7 +152,7 @@
             </li>
             <li class="sublist">
                 <a class="dropdown">Outils</a>
-                <ul class="hidden">
+                <ul>
                     <!-- <li>
                         <a href="">Visibilité des outils</a>
                     </li>
@@ -159,16 +160,16 @@
                         <a href="">gestion / organisation</a>
                     </li> -->
                     <li>
-                        <a href="./tools/communication.html">Communication</a>
+                        <a href="./communication.html">Communication</a>
                     </li>
                     <li>
-                        <a href="./tools/conception.html">Conception</a>
+                        <a href="">Conception</a>
                     </li>
                     <li>
-                        <a href="./tools/management.html">Gestion</a>
+                        <a href="../tools/management.html">Gestion</a>
                     </li>
                     <li>
-                        <a href="./tools/development.html">Développement</a>
+                        <a href="../tools/development.html">Développement</a>
                     </li>
                 </ul>
             </li>
@@ -181,24 +182,57 @@
     </svg>
     <main class="invisible" id="main">
         <h1>
-            JYMP
+            Outils
         </h1>
         <h2>
-            is the new LAMP
+            Conception
         </h2>
         <p>
-            JYMP est un site qui nous permet d'illustrer notre super dossier qui constitue un super mémo autour de la construction de sites web. <br>
-            Comme on est super gentils, on vous le met à disposition, c'est pour nous, c'est cadeau : <span style="color: #C71717; cursor: pointer;">lien téléchargement</span><br>
-            Ensuite, comme on a rien d'autre à dire, voici un lorem de 716 caractères pour qu'on ait l'air intelligent :
+            Lorsque l’on conçoit l'application que nous livrerons au client, 
+            plusieurs étapes sont à observer : le wireframing, le visuel, et le prototypage.
         </p>
+        <h3>Wireframing</h3>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam quibusdam, deserunt temporibus debitis nihil ipsum praesentium id, tempora eius voluptas impedit maiores tempore recusandae minus perferendis reprehenderit explicabo adipisci.
-            Eius incidunt illo totam adipisci itaque perspiciatis laudantium cum ullam, doloremque, accusantium inventore eligendi esse exercitationem nisi repudiandae sed culpa id placeat, autem deleniti corrupti illum enim iure. Quo, eum.
-            Fuga dolores numquam cupiditate qui, accusamus deleniti vel? Iste maiores incidunt ullam harum. Deleniti iusto exercitationem voluptas laudantium culpa quibusdam iste dolore velit ducimus veniam. Dolore delectus voluptates illum repellat?
+            Le Wireframing consiste à concevoir la maquette « fonctionnelle » du site. Contrairement aux maquettes graphiques, 
+            un wireframe s’affranchit complètement de l’aspect visuel du site, pour se concentrer sur l’ergonomie, l’UX. 
+            Son but est principalement de définir la hiérarchie de l'information de notre design et servir de base pour la suite.
+            <br>Ci-dessous, une liste d'outils permettant le wireframing :
         </p>
+        <ul class="smallToolsList">
+            <li><a href="https://www.axure.com/" target="_blank" rel="noopener noreferrer">Axure</a></li>
+            <li><a href="https://www.mockflow.com/" target="_blank" rel="noopener noreferrer">Mockflow</a></li>
+            <li><a href="https://balsamiq.com/" target="_blank" rel="noopener noreferrer">Balsamiq</a></li>
+            <li><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a></li>
+            <li><a href="https://www.adobe.com/fr/products/xd.html" target="_blank" rel="noopener noreferrer">Adobe Xd</a></li>
+            <li><a href="https://www.sketch.com/" target="_blank" rel="noopener noreferrer">Sketch</a></li>
+        </ul>
+        <h3>Visuel</h3>
         <p>
-            En latin, "cum" signifie "comme, étant donné que", nous ne sommes pas des perverts.
+            Après le wireframing, on vient appliquer le style, le visuel sur nos wireframes. 
+            Cette étape va permettre au client de mieux se projeter et aux développeurs 
+            de pouvoir réaliser les maquettes sans se poser de questions d’ordre graphique. 
+            <br>Ci-dessous, une liste d'outils orientés visuel :
         </p>
+        <ul class="smallToolsList">
+            <li><a href="https://www.adobe.com/fr/products/illustrator.html?promoid=PYPVQ3HN&mv=other" target="_blank" rel="noopener noreferrer">Illustrator</a></li>
+            <li><a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank" rel="noopener noreferrer">PhotoShop</a></li>
+            <li><a href="https://www.adobe.com/fr/products/indesign.html" target="_blank" rel="noopener noreferrer">Indesign</a></li>
+            <li><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a></li>
+            <li><a href="https://www.adobe.com/fr/products/xd.html" target="_blank" rel="noopener noreferrer">Adobe Xd</a></li>
+        </ul>
+        <h3>Prototypage</h3>
+        <p>
+            Le prototypage peut être réalisé sur les wireframes comme sur des maquettes très visuelles. 
+            C’est une étape qui consiste à ajouter de l'interactivité aux maquettes. 
+            On va pouvoir simuler un clic, un hover, et donc simuler la navigation.
+        </p>
+        <ul class="smallToolsList">
+            <li><a href="https://www.axure.com/" target="_blank" rel="noopener noreferrer">Axure</a></li>
+            <li><a href="https://www.mockflow.com/" target="_blank" rel="noopener noreferrer">Mockflow</a></li>
+            <li><a href="https://www.sketch.com/" target="_blank" rel="noopener noreferrer">Sketch</a></li>
+            <li><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a></li>
+            <li><a href="https://www.adobe.com/fr/products/xd.html" target="_blank" rel="noopener noreferrer">Adobe Xd</a></li>
+        </ul>
     </main>
 </body>
 </html>
