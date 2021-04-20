@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <script src="../../js/pages.js" defer></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
+</head>
+<body>
+    <nav id="menu">
+        <ul class="mainlist" id="mainlist">
+            <li>
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
+                </a>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Données utilisateurs</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
+                    </li>
+                    <li>
+                        <a href="../userData/cookies.html">Cookies</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Données textuelles et fichiers</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="../textData/csvJson.html">CSV et JSON</a>
+                    </li>
+                    <!-- <li>
+                        <a href="">Manipulation des données</a>
+                    </li>
+                    <li>
+                        <a href="">Encodage</a>
+                    </li>
+                    <li>
+                        <a href="">Traitements de masse</a>
+                    </li> -->
+                    <li>
+                        <a href="../textData/regex.html">Expressions régulières</a>
+                    </li>
+                    <li>
+                        <a href="../textData/fluxrss.html">Flux rss</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Médias</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="../media/images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="../media/steganography.html">Stéganographie</a>
+                    </li>
+                    <li>
+                        <a href="../media/audioVideo.html">Audio et vidéo</a>
+                    </li>
+                    <li>
+                        <a href="">Protection</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Organisation :<br> gestion et protection de données</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Gestion des données</a>
+                    </li>
+                    <li>
+                        <a href="">Migration (htacess)</a>
+                    </li>
+                    <li>
+                        <a href="">Création et injection</a>
+                    </li>
+                    <li>
+                        <a href="">Protection des données (RGPD)</a>
+                    </li>
+                    <li>
+                        <a href="">RFID</a>
+                    </li>
+                    <li>
+                        <a href="">Protection du code (obfuscation)</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Référencement</a>
+                <ul>
+                    <li>
+                        <a href="">Bonnes pratiques</a>
+                    </li>
+                    <li>
+                        <a href="./googleAlgorithm.html">Algorithme Google</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Identité visuelle et ergonomique</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Conception</a>
+                    </li>
+                    <li>
+                        <a href="">Générateurs de faux texte</a>
+                    </li>
+                    <li>
+                        <a href="">Expérience et tests utilisateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Écosystème et Architecture</a>
+                    </li>
+                    <li>
+                        <a href="">Templates</a>
+                    </li>
+                    <li>
+                        <a href="">CMS</a>
+                    </li>
+                    <li>
+                        <a href="">Wysiwyg</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Compatibilité</a>
+                <ul class="hidden">
+                    <li>
+                        <a href="">Paramètres de visualisation</a>
+                    </li>
+                    <li>
+                        <a href="">Vues informatiques</a>
+                    </li>
+                    <li>
+                        <a href="">Compatibilités des navigateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Versions des langages</a>
+                    </li>
+                    <li>
+                        <a href="">Accessibilité</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sublist">
+                <a class="dropdown">Outils</a>
+                <ul class="hidden">
+                    <!-- <li>
+                        <a href="">Visibilité des outils</a>
+                    </li>
+                    <li>
+                        <a href="">gestion / organisation</a>
+                    </li> -->
+                    <li>
+                        <a href="../tools/communication.html">Communication</a>
+                    </li>
+                    <li>
+                        <a href="../tools/conception.html">Conception</a>
+                    </li>
+                    <li>
+                        <a href="../tools/management.html">Gestion</a>
+                    </li>
+                    <li>
+                        <a href="../tools/development.html">Développement</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <svg viewBox="0 0 100 80" width="40" height="40" id="menuBurger">
+        <rect width="100" height="20%" fill="#C71717"></rect>
+        <rect y="30%" width="100" height="20%" fill="#C71717"></rect>
+        <rect y="60%" width="100" height="20%" fill="#C71717"></rect>
+    </svg>
+    <main id="main">
+        <h1>
+            SEO
+        </h1>
+        <h2>
+            Best practices
+        </h2>
+        <h3 class="red">Aider google à trouver nos pages</h3>
+        <ul>
+            <li>
+                Veiller à que les pages soient toutes accessibles depuis un lien situé sur une autre page, à l'exeption de l'index.
+                Seuls les liens apparaissant sous la forme de balises &#60a&#62 avec un attribut href peuvent être explorés.
+            </li>
+            <li>
+                Fournir un fichier sitemap avec des liens pointant vers les pages importantes du site, 
+                ainsi qu'une page comportant une liste lisible (non codée) de liens vers ces pages.
+            </li>
+            <li>
+                Limiter le nombre de liens par page (quelques milliers tout au plus).
+            </li>
+            <li>
+                S'assurer que le serveur Web accepte l'en-tête HTTP If-Modified-Since. 
+                Cet en-tête demande au serveur Web d'indiquer si le contenu de notre site a évolué depuis sa dernière exploration par Google. 
+                Cela permet de limiter la consommation en bande passante et l'exploitation inutile d'autres ressources informatiques.
+            </li>
+            <li>
+                Utiliser le fichier robots.txt sur le serveur Web pour gérer le traitement de notre site en empêchant 
+                l'exploration d'espaces infinis tels que les pages de résultats de recherche.
+            </li>
+        </ul>
+        <h3 class="red">Aider google à trouver notre site</h3>
+        <ul>
+            <li><a class="red" href="https://www.sarbacane.com/" target="_blank" rel="noopener noreferrer">Demander l'exploration des pages.</a></li>
+            <li>
+                S'assurer que tous les sites susceptibles d'être intéressés par le 
+                contenu de nos pages sont informés que notre site est en ligne.
+            </li>
+        </ul>
+        <h3 class="red">Aider google à interpréter nos pages</h3>
+        <ul>
+            <li>
+                Concevoir un site utile et riche en informations, 
+                et rédiger des pages présentant le contenu de façon claire et pertinente.
+            </li>
+            <li>
+                Essayer d'identifier les mots que les internautes sont susceptibles d'employer pour rechercher les pages, 
+                puis utiliser ces mêmes termes sur le site.
+            </li>
+            <li>
+                S'assurer que les éléments &#60title&#62 et les attributs alt sont précis, pertinents et descriptifs.
+            </li>
+            <li>
+                Créer une arborescence de pages claire et conceptuelle.
+            </li>
+            <li>
+                Pour aider google à comprendre le contenu du site de manière exhaustive, 
+                autoriser l'exploration de tous les éléments de ce dernier ayant un impact important sur l'affichage de la page, 
+                tels que les fichiers CSS et JavaScript qui influent sur l'interprétation des pages.
+            </li>
+            <li>
+                Permettre aux robots de recherche d'explorer le site sans identifiants de session ni paramètres d'URL 
+                qui suivent leur cheminement dans ce dernier.
+            </li>
+            <li>
+                Rendre visible par défaut le contenu important du site.
+            </li>
+        </ul>
+        
+        <h3 class="red">Aider les visiteurs à trouver notre site</h3>
+        <ul>
+            <li>
+                Pour présenter les éléments les plus importants du site (noms, contenu, liens, etc.), 
+                utiliser du texte plutôt que des éléments graphiques.
+            </li>
+            <li>
+                Veiller à ce que tous les liens redirigent vers des pages Web en ligne. Utilisez un code HTML valide.
+            </li>
+            <li>
+                Optimiser le temps de chargement des pages.
+            </li>
+            <li>
+                Adapter le site à tous les types et à toutes les tailles d'appareils : ordinateurs, tablettes et smartphones.
+            </li>
+            <li>
+                S'assurer que le site s'affiche correctement dans différents navigateurs.
+            </li>
+            <li>
+                Si possible, sécuriser les connexions au site à l'aide du protocole HTTPS.
+            </li>
+            <li>
+                Veiller à ce que les pages soient consultables par les personnes souffrant de déficiences visuelles, 
+                par exemple en testant leur facilité d'utilisation sur un lecteur d'écran.
+            </li>
+        </ul>
+        <legend>Source : google search central</legend>
+    </main>
+</body>
+</html>
