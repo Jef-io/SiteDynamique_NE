@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <script src="../js/pages.js" defer></script>
-    <link rel="stylesheet" href="../scss/pages.scss">
-    <link rel="stylesheet" href="../scss/global.scss">
+    <script src="../../js/pages.js" defer></script>
+    <link rel="stylesheet" href="../../scss/pages.scss">
+    <link rel="stylesheet" href="../../scss/global.scss">
 </head>
 <body>
     <nav id="menu">
-        <ul class="mainlist invisible" id="mainlist">
+        <ul class="mainlist" id="mainlist">
             <li>
-                <a href="">
-                    <img src="../assets/logo.svg" alt="logo">
+                <a href="../home.html">
+                    <img src="../../assets/logo.svg" alt="logo">
                 </a>
             </li>
             <li class="sublist">
                 <a class="dropdown">Données utilisateurs</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./userData/geolocalisation.html">Géolocalisation</a>
+                        <a href="../userData/geolocalisation.html">Géolocalisation</a>
                     </li>
                     <li>
-                        <a href="./userData/cookies.html">Cookies</a>
+                        <a href="../userData/cookies.html">Cookies</a>
                     </li>
                 </ul>
             </li>
@@ -33,7 +33,7 @@
                 <a class="dropdown">Données textuelles et fichiers</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./textData/csvJson.html">CSV et JSON</a>
+                        <a href="../textData/csvJson.html">CSV et JSON</a>
                     </li>
                     <!-- <li>
                         <a href="">Manipulation des données</a>
@@ -45,10 +45,10 @@
                         <a href="">Traitements de masse</a>
                     </li> -->
                     <li>
-                        <a href="./textData/regex.html">Expressions régulières</a>
+                        <a href="../textData/regex.html">Expressions régulières</a>
                     </li>
                     <li>
-                        <a href="./textData/fluxrss.html">Flux rss</a>
+                        <a href="../textData/fluxrss.html">Flux rss</a>
                     </li>
                 </ul>
             </li>
@@ -56,13 +56,13 @@
                 <a class="dropdown">Médias</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./media/images.html">Images</a>
+                        <a href="../media/images.html">Images</a>
                     </li>
                     <li>
-                        <a href="./media/steganography.html">Stéganographie</a>
+                        <a href="../media/steganography.html">Stéganographie</a>
                     </li>
                     <li>
-                        <a href="./media/audioVideo.html">Audio et vidéo</a>
+                        <a href="../media/audioVideo.html">Audio et vidéo</a>
                     </li>
                     <li>
                         <a href="">Protection</a>
@@ -94,12 +94,12 @@
             </li>
             <li class="sublist">
                 <a class="dropdown">Référencement</a>
-                <ul class="hidden">
+                <ul>
                     <li>
-                        <a href="./seo/bestPractices.html">Bonnes pratiques</a>
+                        <a href="../seo/bestPractices.html">Bonnes pratiques</a>
                     </li>
                     <li>
-                        <a href="">Algorithme Google</a>
+                        <a href="../seo/googleAlgorithm.html">Algorithme Google</a>
                     </li>
                 </ul>
             </li>
@@ -107,27 +107,39 @@
                 <a class="dropdown">Identité visuelle et ergonomique</a>
                 <ul class="hidden">
                     <li>
-                        <a href="./ecosystem/architecture.html">Architecture</a>
+                        <a href="">Conception</a>
                     </li>
                     <li>
-                        <a href="./ecosystem/architecture.html">CMS</a>
+                        <a href="">Générateurs de faux texte</a>
                     </li>
                     <li>
-                        <a href="./ecosystem/lorem.html">Générateurs de faux texte</a>
+                        <a href="">Expérience et tests utilisateurs</a>
+                    </li>
+                    <li>
+                        <a href="">Écosystème et Architecture</a>
+                    </li>
+                    <li>
+                        <a href="">Templates</a>
+                    </li>
+                    <li>
+                        <a href="">CMS</a>
+                    </li>
+                    <li>
+                        <a href="">Wysiwyg</a>
                     </li>
                 </ul>
             </li>
             <li class="sublist">
                 <a class="dropdown">Compatibilité</a>
-                <ul class="hidden">
+                <ul>
                     <li>
-                        <a href="./compatibility/accessibility.html">Accessibilité</a>
+                        <a href="./accessibility.html">Accessibilité</a>
                     </li>
                     <li>
-                        <a href="./compatibility/browsers.html">Compatibilités des navigateurs</a>
+                        <a href="./browsers.html">Compatibilités des navigateurs</a>
                     </li>
                     <li>
-                        <a href="./compatibility/versions.html">Versions des langages</a>
+                        <a href="./versions.html">Versions des langages</a>
                     </li>
                 </ul>
             </li>
@@ -141,16 +153,16 @@
                         <a href="">gestion / organisation</a>
                     </li> -->
                     <li>
-                        <a href="./tools/communication.html">Communication</a>
+                        <a href="../tools/communication.html">Communication</a>
                     </li>
                     <li>
-                        <a href="./tools/conception.html">Conception</a>
+                        <a href="../tools/conception.html">Conception</a>
                     </li>
                     <li>
-                        <a href="./tools/management.html">Gestion</a>
+                        <a href="../tools/management.html">Gestion</a>
                     </li>
                     <li>
-                        <a href="./tools/development.html">Développement</a>
+                        <a href="../tools/development.html">Développement</a>
                     </li>
                 </ul>
             </li>
@@ -161,29 +173,14 @@
         <rect y="30%" width="100" height="20%" fill="#C71717"></rect>
         <rect y="60%" width="100" height="20%" fill="#C71717"></rect>
     </svg>
-    <main class="invisible" id="main">
+    <main id="main">
         <h1>
-            JYMP
+            Compatibilité
         </h1>
         <h2>
-            is the new LAMP
+            Accessibilité
         </h2>
-        <p>
-            JYMP est un site qui nous permet d'illustrer notre super dossier qui constitue un super mémo autour de la construction de sites web. <br>
-            Comme on est super gentils, on vous le met à disposition, c'est pour nous, c'est cadeau : <span style="color: #C71717; cursor: pointer;">lien téléchargement</span><br>
-            Ensuite, comme on a rien d'autre à dire, voici un lorem de 1432 caractères pour qu'on ait l'air intelligent :
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam quibusdam, deserunt temporibus debitis nihil ipsum praesentium id, tempora eius voluptas impedit maiores tempore recusandae minus perferendis reprehenderit explicabo adipisci.
-            Eius incidunt illo totam adipisci itaque perspiciatis laudantium cum ullam, doloremque, accusantium inventore eligendi esse exercitationem nisi repudiandae sed culpa id placeat, autem deleniti corrupti illum enim iure. Quo, eum.
-            Fuga dolores numquam cupiditate qui, accusamus deleniti vel? Iste maiores incidunt ullam harum. Deleniti iusto exercitationem voluptas laudantium culpa quibusdam iste dolore velit ducimus veniam. Dolore delectus voluptates illum repellat?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam quibusdam, deserunt temporibus debitis nihil ipsum praesentium id, tempora eius voluptas impedit maiores tempore recusandae minus perferendis reprehenderit explicabo adipisci.
-            Eius incidunt illo totam adipisci itaque perspiciatis laudantium cum ullam, doloremque, accusantium inventore eligendi esse exercitationem nisi repudiandae sed culpa id placeat, autem deleniti corrupti illum enim iure. Quo, eum.
-            Fuga dolores numquam cupiditate qui, accusamus deleniti vel? Iste maiores incidunt ullam harum. Deleniti iusto exercitationem voluptas laudantium culpa quibusdam iste dolore velit ducimus veniam. Dolore delectus voluptates illum repellat?
-        </p>
-        <p>
-            En latin, "cum" signifie "comme, étant donné que", nous ne sommes pas des perverts.
-        </p>
+        
     </main>
 </body>
 </html>
