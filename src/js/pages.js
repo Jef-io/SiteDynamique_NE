@@ -22,13 +22,16 @@ const toggleDropdown = (e) => {
     }
 }
 
-document.getElementById('menuBurger').addEventListener('click', () => {
-    if (document.getElementById('menu').style.display === 'block') {
-        document.getElementById('menu').style.display = 'none'
-    } else {
-        document.getElementById('menu').style.display = 'block'
-    }
-})
+let menuBurger = document.getElementById('menuBurger');
+if (menuBurger) {
+    menuBurger.addEventListener('click', () => {
+        if (document.getElementById('menu').style.display === 'block') {
+            document.getElementById('menu').style.display = 'none'
+        } else {
+            document.getElementById('menu').style.display = 'block'
+        }
+    })
+}
 
 window.addEventListener('resize', () => {
     if (window.innerWidth > 1280 && document.getElementById('menu').style.display === 'none') {
@@ -72,7 +75,8 @@ const updateCookie = () => {
     document.cookie = "last url = " + document.referrer;
 }
 
-if (!document.cookie) {
+
+if (!document.cookie && window.location.pathname.includes("home")) {
     askForCookie();
 } else {
     updateCookie()
