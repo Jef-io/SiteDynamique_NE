@@ -183,6 +183,11 @@ button {
     }
 }
 
+.link {
+    color: $blue;
+    text-decoration: underline;
+}
+
 input {
     padding: 1vh 1vw;
     background: $blue;
